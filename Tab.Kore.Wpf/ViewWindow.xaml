@@ -1,0 +1,8 @@
+﻿<Window x:Class="Tab.Kore.Wpf.ViewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="View Window" Height="499" Width="745">
+    <Grid>
+        <TextBox Height="434" HorizontalAlignment="Left" Margin="12,14,0,0" Name="txtContent" VerticalAlignment="Top" Width="699" />
+    </Grid>
+</Window>
