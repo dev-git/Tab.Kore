@@ -82,7 +82,7 @@ namespace Tab.Kore.Wpf
                         if (subDir.Items.Count != di.Length)
                         {
                             TreeViewItem trv =
-                                new TreeViewItem() { Header = String.Format("{0} - {1:N0}", dir.Name, GetDirectorySize(dir) / 1000000), Name = dirName, Tag = dir.FullName + System.IO.Path.DirectorySeparatorChar };
+                                new TreeViewItem() { Header = String.Format("{0} - {1:N0} MB ", dir.Name, GetDirectorySize(dir) / 1000000), Name = dirName, Tag = dir.FullName + System.IO.Path.DirectorySeparatorChar };
                             subDir.Items.Add(trv);
                             subDir.RegisterName(dirName, trv);
                             subDir.ExpandSubtree();
@@ -110,6 +110,11 @@ namespace Tab.Kore.Wpf
             GetDirectoryList(((TreeViewItem)e.NewValue).Tag.ToString(), givenDirName);
         }
 
+        /// <summary>
+        /// Gets the size of the directory.
+        /// </summary>
+        /// <param name="d">The command.</param>
+        /// <returns></returns>
         public static long GetDirectorySize(DirectoryInfo d)
         {
             long dirSize = 0;
