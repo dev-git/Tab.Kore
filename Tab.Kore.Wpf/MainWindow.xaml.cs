@@ -239,12 +239,13 @@ namespace Tab.Kore.Wpf
 
         private void btnGroup_Click(object sender, RoutedEventArgs e)
         {
-            GroupPerfFiles();
+            
+            //GroupPerfFiles();
         }
 
 
         /// <summary>
-        /// Group a set of Jakaar Perf emails in one flat file
+        /// Deprectated -- Group a set of Jakaar Perf emails in one flat file
         /// </summary>
         private void GroupPerfFiles()
         {
